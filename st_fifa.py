@@ -21,7 +21,7 @@ def prepare_data():
     pd.read_csv("players_fifa23.csv").drop_duplicates(subset=["FullName", "Club"]).reset_index())
     # Data Cleaning
     # Setting Full Name as Index
-    fifa2 = fifa.set_index("FullName")
+    fifa2 = fifa.drop_duplicates(subset=["FullName"]).set_index("FullName")
     # Selection of numeric attributes that are useful for player recommendation
     fifa3 = fifa2._get_numeric_data()
     fifa4 = fifa3.drop(
