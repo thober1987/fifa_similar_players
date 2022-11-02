@@ -25,7 +25,7 @@ def prepare_data():
     # Selection of numeric attributes that are useful for player recommendation
     fifa3 = fifa2._get_numeric_data()
     fifa4 = fifa3.drop(
-        [
+        [  "index",
             "ID",
             "Growth",
             "TotalStats",
