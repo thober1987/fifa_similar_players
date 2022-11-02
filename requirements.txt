@@ -1,0 +1,8 @@
+pandas
+numpy
+sklearn
+matplotlib
+plotly
+seaborn
+jupyter_black
+streamlit
