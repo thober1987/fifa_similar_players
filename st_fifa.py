@@ -124,6 +124,7 @@ def similar_player(player_name):
     fig = sns.barplot(data=df_data, x=Xaxis, y=Yaxis, palette="mako")
     fig.set_title('Players similar to  " ' + str(player_name) + ' "')
     # plt.show()
+    plt.xlabel("Difference", fontsize=14)
     st.pyplot(plt)
 
     ## Table display
