@@ -6,3 +6,4 @@ plotly
 seaborn
 jupyter_black
 streamlit
+scikit-learn
